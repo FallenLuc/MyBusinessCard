@@ -1,0 +1,45 @@
+@use "reset";
+@use "vars/font.var";
+@use "fonts/Roboto.font";
+@use "vars/gap.var";
+@use "global";
+
+.app {
+	position: relative;
+	min-height: 100vh;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: auto;
+	min-height: 100vh;
+}
+
+// supports (storybook)
+.full-height {
+	height: auto !important;
+	min-height: 100vh !important;
+}
+
+.center-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	min-height: 100vh;
+	padding: 20px;
+}
+
+.restriction-container {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.restriction-container-large {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
