@@ -1,0 +1,18 @@
+.Menu {
+	&::before {
+		content: "";
+
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		left: 50%;
+		width: 110%;
+		height: 150%;
+
+		transform: translate(-50%, -50%);
+
+		border-radius: 16px;
+
+		background-color: #fff;
+	}
+}

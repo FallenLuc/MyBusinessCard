@@ -15,7 +15,7 @@ export const svgrLoaders = (): RuleSetRule[] => {
 							{
 								name: "convertColors",
 								params: {
-									currentColor: true
+									currentColor: false
 								}
 							}
 						]
@@ -27,9 +27,8 @@ export const svgrLoaders = (): RuleSetRule[] => {
 
 	const svgrLoaderIcon = {
 		test: /\.svg$/i,
-		type: "asset",
 		resourceQuery: /url/,
-		use: ["@svgr/webpack"]
+		type: "asset/resource"
 	}
 
 	return [svgrLoaderComponent, svgrLoaderIcon]

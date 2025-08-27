@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@ant-design/icons':
+        specifier: 5.x
+        version: 5.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@babel/runtime':
         specifier: ^7.25.4
         version: 7.26.0
@@ -234,6 +237,9 @@ importers:
       circular-dependency-plugin:
         specifier: ^5.2.2
         version: 5.2.2(webpack@5.97.1)
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
       concurrently:
         specifier: ^8.2.2
         version: 8.2.2

@@ -1,0 +1,8 @@
+<!-- RTK Query (text-based, centered) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <rect width="80" height="80" rx="16" fill="#a90202"/>
+    <g fill="white" font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
+        <text x="40" y="42" font-size="24" font-weight="700">RTK</text>
+        <text x="40" y="58" font-size="14" font-weight="600">Query</text>
+    </g>
+</svg>
