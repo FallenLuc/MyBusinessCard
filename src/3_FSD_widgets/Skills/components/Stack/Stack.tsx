@@ -7,10 +7,7 @@ const { Title, Text } = Typography
 
 export const Stack = TypedMemo(() => {
 	return (
-		<Flex
-			vertical
-			gap={"middle"}
-		>
+		<Flex vertical>
 			<Title level={3}>{"Мой стек"}</Title>
 			<Flex gap={"middle"}>
 				{stack.map(({ Icon, text }, i) => (

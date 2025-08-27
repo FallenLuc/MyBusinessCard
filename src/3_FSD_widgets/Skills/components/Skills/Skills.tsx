@@ -1,9 +1,8 @@
-import checkIconUrl from "@assets/icons/check.svg?url"
 import { menuItems } from "@features/Menu"
 import { TypedMemo } from "@sharedProviders/TypedMemo"
-import { Avatar, Flex, List, Typography } from "antd"
+import { Flex, Typography } from "antd"
 import classNames from "classnames"
-import { competencies } from "../../constants/competencies.constant"
+import { Competencies } from "../Competencies/Competencies"
 import { Stack } from "../Stack/Stack"
 
 type SkillsProps = {
@@ -11,7 +10,6 @@ type SkillsProps = {
 }
 
 const { Title } = Typography
-const { Item } = List
 
 export const Skills = TypedMemo((props: SkillsProps) => {
 	const { className } = props
@@ -26,20 +24,13 @@ export const Skills = TypedMemo((props: SkillsProps) => {
 		>
 			<Title level={2}>{menuItems.skills.title}</Title>
 
-			<Stack />
+			<Flex
+				vertical={true}
+				gap={"large"}
+			>
+				<Stack />
 
-			<Flex vertical>
-				<Title level={3}>{"Ключевые компетенции"}</Title>
-				<List>
-					{competencies.map((item, i) => (
-						<Item key={i}>
-							<Item.Meta
-								title={item.title}
-								avatar={<Avatar src={checkIconUrl} />}
-							/>
-						</Item>
-					))}
-				</List>
+				<Competencies />
 			</Flex>
 		</Flex>
 	)

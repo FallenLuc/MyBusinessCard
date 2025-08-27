@@ -11,11 +11,13 @@ import ScssIcon from "./icons/scss.svg"
 import StoryBookIcon from "./icons/storybook.svg"
 import TypeScriptIcon from "./icons/typescript.svg"
 import WebpackIcon from "./icons/webpack.svg"
+import tBankIconUrl from "./icons/т-bank.svg?url"
 
 // images
 import AvatarImage from "./image/avatar.jpeg"
 
 export {
+	tBankIconUrl,
 	AvatarImage,
 	GitIcon,
 	RtkIcon,

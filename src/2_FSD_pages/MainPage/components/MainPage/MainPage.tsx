@@ -2,6 +2,7 @@ import { TypedMemo } from "@sharedProviders/TypedMemo"
 import { AboutMe } from "@widgets/AboutMe"
 import { Header } from "@widgets/Header"
 import { Skills } from "@widgets/Skills"
+import { WorkExperience } from "@widgets/WorkExperience"
 import { Flex } from "antd"
 import classNames from "classnames"
 
@@ -22,6 +23,7 @@ export const MainPage = TypedMemo((props: MainPageProps) => {
 				<Header />
 				<AboutMe />
 				<Skills />
+				<WorkExperience />
 			</Flex>
 		</div>
 	)
