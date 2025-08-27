@@ -134,6 +134,7 @@
 		"whatwg-fetch": "^3.6.20"
 	},
 	"dependencies": {
+		"@ant-design/icons": "5.x",
 		"@babel/runtime": "^7.25.4",
 		"@headlessui/react": "^2.1.2",
 		"@react-spring/web": "^9.7.4",
