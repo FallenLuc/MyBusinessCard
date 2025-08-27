@@ -22,6 +22,7 @@ export const ProjectDetailedCard = TypedMemo((props: ProjectDetailedCardProps) =
 		<Flex
 			className={classNames(className)}
 			vertical
+			component={"article"}
 		>
 			<Title level={4}>{title}</Title>
 			<List bordered={false}>

@@ -21,6 +21,7 @@ export const WorkDetailedCard = TypedMemo((props: WorkDetailedCardProps) => {
 			vertical
 			className={classNames(className)}
 			gap={"middle"}
+			component={"article"}
 		>
 			<Flex
 				align={"center"}
