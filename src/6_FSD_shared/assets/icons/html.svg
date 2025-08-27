@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,0,0)">
+      <mask id="cutout" fill="white">
+        <rect width="80" height="80" rx="16" fill="white"/>
+        <polyline points="32,28 22,40 32,52" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <polyline points="48,28 58,40 48,52" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <line x1="40" y1="26" x2="40" y2="54" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </mask>
+      <rect width="80" height="80" rx="16" style="fill:rgb(169,2,2);" mask="url(#cutout)"/>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+<!-- React -->
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <rect width="80" height="80" rx="16" fill="#a90202"/>
+    <g fill="none" stroke="white" stroke-width="3" transform="translate(0,0)">
+        <ellipse cx="40" cy="40" rx="20" ry="8"/>
+        <ellipse cx="40" cy="40" rx="20" ry="8" transform="rotate(60 40 40)"/>
+        <ellipse cx="40" cy="40" rx="20" ry="8" transform="rotate(-60 40 40)"/>
+        <circle cx="40" cy="40" r="4" fill="white" stroke="none"/>
+    </g>
+</svg>
