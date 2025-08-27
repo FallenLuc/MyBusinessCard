@@ -17,7 +17,7 @@ export const Projects = TypedMemo((props: ProjectsProps) => {
 	return (
 		<Flex
 			component={"section"}
-			className={classNames(className)}
+			className={classNames(className, "section")}
 			vertical={true}
 			gap={"middle"}
 			id={menuItems.projects.key}

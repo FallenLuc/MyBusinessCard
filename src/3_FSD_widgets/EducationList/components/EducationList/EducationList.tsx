@@ -32,7 +32,7 @@ export const EducationList = TypedMemo((props: EducationListProps) => {
 
 	return (
 		<Flex
-			className={classNames(className)}
+			className={classNames(className, "section")}
 			vertical
 			id={menuItems.education.key}
 			component={"section"}

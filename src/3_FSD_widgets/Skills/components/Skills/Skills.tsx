@@ -16,7 +16,7 @@ export const Skills = TypedMemo((props: SkillsProps) => {
 
 	return (
 		<Flex
-			className={classNames(className)}
+			className={classNames(className, "section")}
 			vertical={true}
 			id={menuItems.skills.key}
 			component={"section"}

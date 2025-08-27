@@ -4,6 +4,7 @@ import { TypedMemo } from "@sharedProviders/TypedMemo"
 import { Flex, Image, Typography } from "antd"
 
 import classNames from "classnames"
+import { Contacts } from "../Contacts/Contacts"
 import styles from "./AboutMe.module.scss"
 
 type AboutMeProps = {
@@ -26,6 +27,7 @@ export const AboutMe = TypedMemo((props: AboutMeProps) => {
 			<Flex
 				vertical={true}
 				className={styles.rightSide}
+				gap={"middle"}
 			>
 				<Title level={2}>{menuItems.about.title}</Title>
 				<Flex
@@ -45,6 +47,8 @@ export const AboutMe = TypedMemo((props: AboutMeProps) => {
 					<Text>Я быстрообучаемый, ответсвенный, заинтересованный специалист.</Text>
 					<Text>Решил продолжить развитие карьеры в Frontend.</Text>
 				</Flex>
+
+				<Contacts />
 			</Flex>
 			<Image
 				preview={false}

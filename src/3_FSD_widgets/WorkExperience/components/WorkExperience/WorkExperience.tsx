@@ -16,7 +16,7 @@ export const WorkExperience = TypedMemo((props: WorkExperienceProps) => {
 
 	return (
 		<Flex
-			className={classNames(className)}
+			className={classNames(className, "section")}
 			vertical={true}
 			component={"section"}
 			id={menuItems.work.key}
