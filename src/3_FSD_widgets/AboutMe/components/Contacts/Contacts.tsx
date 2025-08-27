@@ -48,7 +48,9 @@ export const Contacts = TypedMemo((props: ContactsProps) => {
 
 				<a
 					href={"https://github.com/FallenLuc"}
+					target="_blank"
 					className={styles.link}
+					rel="noreferrer"
 				>
 					<GithubOutlined className={styles.icon} />
 					<Text className={styles.text}>Портфолио</Text>
