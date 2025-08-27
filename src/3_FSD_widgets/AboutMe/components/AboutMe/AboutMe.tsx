@@ -47,6 +47,7 @@ export const AboutMe = TypedMemo((props: AboutMeProps) => {
 				</Flex>
 			</Flex>
 			<Image
+				preview={false}
 				className={styles.image}
 				width={500}
 				alt={"Аватар"}

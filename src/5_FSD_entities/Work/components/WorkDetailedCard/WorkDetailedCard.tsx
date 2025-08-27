@@ -33,6 +33,7 @@ export const WorkDetailedCard = TypedMemo((props: WorkDetailedCardProps) => {
 					gap={"small"}
 				>
 					<Image
+						preview={false}
 						width={200}
 						src={iconCompany}
 						alt={nameCompany}
