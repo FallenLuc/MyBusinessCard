@@ -1,7 +1,17 @@
+@use "@styles/includes/media.mixin";
+
 .Header {
 	margin-top: 100px;
 }
 
 .title {
 	margin-bottom: 0 !important;
+}
+
+@include media.auto-media("max", "md") {
+	.Header {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		margin-top: 0;
+	}
 }

@@ -4,6 +4,7 @@ import { TypedMemo } from "@sharedProviders/TypedMemo"
 import { Flex, Image, Typography } from "antd"
 
 import classNames from "classnames"
+import { useMemo } from "react"
 import { Contacts } from "../Contacts/Contacts"
 import styles from "./AboutMe.module.scss"
 
@@ -16,12 +17,14 @@ const { Title, Text } = Typography
 export const AboutMe = TypedMemo((props: AboutMeProps) => {
 	const { className } = props
 
+	const placeholder = useMemo(() => <div className={styles.placeholder} />, [])
 	return (
 		<Flex
-			className={classNames(className)}
+			className={classNames(styles.AboutMe, className)}
 			id={menuItems.about.key}
 			justify={"space-between"}
 			align={"center"}
+			gap={"middle"}
 			component={"section"}
 		>
 			<Flex
@@ -50,13 +53,17 @@ export const AboutMe = TypedMemo((props: AboutMeProps) => {
 
 				<Contacts />
 			</Flex>
-			<Image
-				preview={false}
-				className={styles.image}
-				width={500}
-				alt={"Аватар"}
-				src={AvatarImage}
-			/>
+
+			<div className={styles.wrapper}>
+				<Image
+					preview={false}
+					className={styles.image}
+					placeholder={placeholder}
+					width={"100%"}
+					alt={"Аватар"}
+					src={AvatarImage}
+				/>
+			</div>
 		</Flex>
 	)
 })

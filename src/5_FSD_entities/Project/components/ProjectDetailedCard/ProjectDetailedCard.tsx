@@ -50,6 +50,7 @@ export const ProjectDetailedCard = TypedMemo((props: ProjectDetailedCardProps) =
 						vertical={false}
 						gap={"small"}
 						align={"center"}
+						wrap="wrap"
 					>
 						<GithubOutlined className={styles.icon} />
 						<Text strong>GitHub:</Text>
@@ -68,6 +69,7 @@ export const ProjectDetailedCard = TypedMemo((props: ProjectDetailedCardProps) =
 						vertical={false}
 						gap={"small"}
 						align={"center"}
+						wrap="wrap"
 					>
 						<ApartmentOutlined className={styles.icon} />
 						<Text strong>Технологии:</Text>

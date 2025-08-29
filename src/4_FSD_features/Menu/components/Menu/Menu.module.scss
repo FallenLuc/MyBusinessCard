@@ -1,18 +1,26 @@
+@use "@styles/includes/media.mixin";
+
 .Menu {
+	padding: 15px;
+
 	&::before {
 		content: "";
 
-		position: absolute;
-		z-index: -1;
-		top: 50%;
-		left: 50%;
-		width: 110%;
-		height: 150%;
+		position: fixed;
 
-		transform: translate(-50%, -50%);
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 50px;
 
-		border-radius: 16px;
+		border-bottom: none;
 
 		background-color: #fff;
+	}
+}
+
+@include media.auto-media("max", "md") {
+	.Menu {
+		padding-left: 0;
 	}
 }
