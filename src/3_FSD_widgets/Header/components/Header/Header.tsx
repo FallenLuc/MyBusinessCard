@@ -18,6 +18,8 @@ export const Header = TypedMemo((props: HeaderProps) => {
 			className={classNames(styles.Header, className)}
 			vertical={false}
 			align={"center"}
+			wrap={"wrap"}
+			gap={"middle"}
 			justify={"space-between"}
 			component={"header"}
 		>
