@@ -26,19 +26,14 @@ export const WorkDetailedCard = TypedMemo((props: WorkDetailedCardProps) => {
 			<Flex
 				align={"center"}
 				gap={"middle"}
+				wrap={"wrap"}
 			>
-				<Flex
-					vertical={false}
-					align={"center"}
-					gap={"small"}
-				>
-					<Image
-						preview={false}
-						width={200}
-						src={iconCompany}
-						alt={nameCompany}
-					/>
-				</Flex>
+				<Image
+					preview={false}
+					width={250}
+					src={iconCompany}
+					alt={nameCompany}
+				/>
 
 				<Flex vertical>
 					<Title level={4}>{position}</Title>

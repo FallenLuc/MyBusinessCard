@@ -4,6 +4,7 @@ import { TypedMemo } from "@sharedProviders/TypedMemo"
 import { Flex, Image, Typography } from "antd"
 
 import classNames from "classnames"
+import { useMemo } from "react"
 import { Contacts } from "../Contacts/Contacts"
 import styles from "./AboutMe.module.scss"
 
@@ -16,12 +17,14 @@ const { Title, Text } = Typography
 export const AboutMe = TypedMemo((props: AboutMeProps) => {
 	const { className } = props
 
+	const placeholder = useMemo(() => <div className={styles.placeholder} />, [])
 	return (
 		<Flex
-			className={classNames(className)}
+			className={classNames(styles.AboutMe, className)}
 			id={menuItems.about.key}
 			justify={"space-between"}
 			align={"center"}
+			gap={"middle"}
 			component={"section"}
 		>
 			<Flex
@@ -35,28 +38,34 @@ export const AboutMe = TypedMemo((props: AboutMeProps) => {
 					gap={"small"}
 				>
 					<Text>
-						Мне 27 лет. В настоящее время работаю в Т-Банке. Разрабатываю сценарии для
-						голосового и чатового робота инвестиций, в том числе, с интеграцией с LLM.
+						Мне 27 лет. У меня есть опыт работы в продуктовой команде Т-Банка (Agile,
+						Daily, Planning, Sprints) по разработке голосового робота. Я легко
+						адаптируюсь к новым задачам и эффективно работаю в кросс‑функциональных
+						командах. В Т‑Банке проводил обучение сотрудников, ревью, участвовал в
+						переговорах с разными командами, проводил встречи по итогам кварталов.
 					</Text>
 					<Text>
-						Имею неоконченное высшее образование в МИРЭА, по направлению информационные
-						системы и технологии. Прошел различные курсы по профессиональной
-						переподготовке по Frontend разработке, в том числе, курсы в
-						онлайн-университете «Нетология» и др.
+						Я умею разрабатывать SPA на React + TypeScript с использованием архитектуры
+						по методологии Feature-Sliced Design. У меня есть опыт по настройке рабочего
+						окружения, такого как Webpack. Умею работать со state manager Redux (Redux
+						Toolkit) + RTK Query. Пишу тесты на Jest, и понимаю для чего их пишу.
 					</Text>
-					<Text>Я быстрообучаемый, ответсвенный, заинтересованный специалист.</Text>
-					<Text>Решил продолжить развитие карьеры в Frontend.</Text>
+					<Text>Я быстрообучаемый, ответственный, заинтересованный специалист.</Text>
 				</Flex>
 
 				<Contacts />
 			</Flex>
-			<Image
-				preview={false}
-				className={styles.image}
-				width={500}
-				alt={"Аватар"}
-				src={AvatarImage}
-			/>
+
+			<div className={styles.wrapper}>
+				<Image
+					preview={false}
+					className={styles.image}
+					placeholder={placeholder}
+					width={"100%"}
+					alt={"Аватар"}
+					src={AvatarImage}
+				/>
+			</div>
 		</Flex>
 	)
 })

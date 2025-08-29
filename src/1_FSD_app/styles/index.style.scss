@@ -1,5 +1,7 @@
 @use "reset";
 @use "vars/colors.var";
+@use "vars/mediaSize.var";
+@use "includes/media.mixin";
 
 .app {
 	position: relative;
