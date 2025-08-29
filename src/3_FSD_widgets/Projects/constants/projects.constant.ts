@@ -2,7 +2,7 @@ import type { dataProjectType } from "@entities/Project"
 
 export const projects: dataProjectType[] = [
 	{
-		title: "Диплом Нетология: « Ресурс для оформление ЖД билетов »",
+		title: "Диплом Нетология: « Ресурс для оформления ЖД билетов »",
 		link: "https://github.com/FallenLuc/RailwayTicketBookingSystem",
 		tasks: [
 			"Выбор ЖД билета",
