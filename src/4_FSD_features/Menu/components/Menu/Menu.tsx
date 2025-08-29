@@ -10,9 +10,12 @@ export const Menu = TypedMemo(() => {
 
 	return (
 		<Anchor
+			bounds={100}
+			targetOffset={50}
 			className={styles.Menu}
 			direction="horizontal"
 			items={items}
+			replace={true}
 		/>
 	)
 })
