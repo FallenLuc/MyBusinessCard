@@ -15,9 +15,11 @@ import tBankIconUrl from "./icons/т-bank.svg?url"
 
 // images
 import AvatarImage from "./image/avatar.jpeg"
+import noxerIconUrl from "./image/noxer-logo.jpg"
 
 export {
 	tBankIconUrl,
+	noxerIconUrl,
 	AvatarImage,
 	GitIcon,
 	RtkIcon,

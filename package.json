@@ -12,6 +12,7 @@
 		"lint:style": "stylelint '**/*{.css,.scss}'",
 		"lint:style:fix": "stylelint '**/*{.css,.scss}' --fix",
 		"lint:prettier": "prettier --write **/*{.ts,.tsx,.json,.html,.css,.scss}",
+		"setup": "pnpm install",
 		"prepare": "husky"
 	},
 	"author": {

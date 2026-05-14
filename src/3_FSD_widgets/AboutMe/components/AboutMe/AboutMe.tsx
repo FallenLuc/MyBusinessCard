@@ -1,10 +1,10 @@
 import { AvatarImage } from "@assets/index"
 import { menuItems } from "@features/Menu"
 import { TypedMemo } from "@sharedProviders/TypedMemo"
-import { Flex, Image, Typography } from "antd"
+import { Flex, Image, Skeleton, Typography } from "antd"
 
 import classNames from "classnames"
-import { useMemo } from "react"
+import { useCallback, useState } from "react"
 import { Contacts } from "../Contacts/Contacts"
 import styles from "./AboutMe.module.scss"
 
@@ -16,8 +16,9 @@ const { Title, Text } = Typography
 
 export const AboutMe = TypedMemo((props: AboutMeProps) => {
 	const { className } = props
+	const [loaded, setLoaded] = useState(false)
 
-	const placeholder = useMemo(() => <div className={styles.placeholder} />, [])
+	const onLoad = useCallback(() => setLoaded(true), [])
 	return (
 		<Flex
 			className={classNames(styles.AboutMe, className)}
@@ -38,32 +39,41 @@ export const AboutMe = TypedMemo((props: AboutMeProps) => {
 					gap={"small"}
 				>
 					<Text>
-						Мне 27 лет. У меня есть опыт работы в продуктовой команде Т-Банка (Agile,
-						Daily, Planning, Sprints) по разработке голосового робота. Я легко
-						адаптируюсь к новым задачам и эффективно работаю в кросс‑функциональных
-						командах. В Т‑Банке проводил обучение сотрудников, ревью, участвовал в
-						переговорах с разными командами, проводил встречи по итогам кварталов.
+						Frontend-разработчик, специализируюсь на построении масштабируемых SPA на
+						React + TypeScript с архитектурой Feature-Sliced Design.
 					</Text>
 					<Text>
-						Я умею разрабатывать SPA на React + TypeScript с использованием архитектуры
-						по методологии Feature-Sliced Design. У меня есть опыт по настройке рабочего
-						окружения, такого как Webpack. Умею работать со state manager Redux (Redux
-						Toolkit) + RTK Query. Пишу тесты на Jest, и понимаю для чего их пишу.
+						В коммерческом проекте Noxer с нуля выстроил архитектуру фронтенда по FSD,
+						перевёл API на RTK Query, собрал кастомный UI-кит, внедрил юнит-тесты (Jest
+						+ RTL), настроил CI/CD на Jenkins и мониторинг через Grafana и GlitchTip.
+						Курирую двух junior-разработчиков на код-ревью, участвую в планировании и
+						проектировании общих сущностей с бэкендом.
 					</Text>
-					<Text>Я быстрообучаемый, ответственный, заинтересованный специалист.</Text>
+					<Text>
+						Параллельно в Т-Банке развиваю голосового и чат-бота для инвестиций:
+						разрабатываю backend-фичи на Python, пишу сценарии, интегрирую LLM, связываю
+						внутренние системы с API на JavaScript. Работаю в Agile: daily, спринты,
+						планирования, Jira.
+					</Text>
 				</Flex>
 
 				<Contacts />
 			</Flex>
 
 			<div className={styles.wrapper}>
+				{!loaded && (
+					<Skeleton.Image
+						active
+						className={styles.skeleton}
+					/>
+				)}
 				<Image
 					preview={false}
-					className={styles.image}
-					placeholder={placeholder}
+					className={classNames(styles.image, { [styles.hidden]: !loaded })}
 					width={"100%"}
 					alt={"Аватар"}
 					src={AvatarImage}
+					onLoad={onLoad}
 				/>
 			</div>
 		</Flex>
