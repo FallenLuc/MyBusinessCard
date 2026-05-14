@@ -10,7 +10,7 @@ runs:
         - name: Install Pnpm
           uses: pnpm/action-setup@v4
           with:
-              version: 11.1.2
+              version: 9.15.4
 
         - name: Setup Node.js
           uses: actions/setup-node@v4
@@ -28,5 +28,5 @@ runs:
                   ${{ runner.os }}-pnpm-
 
         - name: Install dependencies
-          run: pnpm install
+          run: pnpm install --frozen-lockfile
           shell: bash
