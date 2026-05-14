@@ -21,6 +21,9 @@
 	"license": "MIT",
 	"pnpm": {
 		"onlyBuiltDependencies": [
+			"@parcel/watcher",
+			"@swc/core",
+			"core-js-pure",
 			"esbuild",
 			"husky",
 			"chromatic",
