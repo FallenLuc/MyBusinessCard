@@ -19,19 +19,6 @@
 		"name": "Lucifer Meridian"
 	},
 	"license": "MIT",
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"@parcel/watcher",
-			"@svgr/webpack",
-			"@swc/core",
-			"chromatic",
-			"core-js",
-			"core-js-pure",
-			"esbuild",
-			"husky",
-			"sass"
-		]
-	},
 	"devDependencies": {
 		"@arthurgeron/eslint-plugin-react-usememo": "^2.4.3",
 		"@babel/core": "^7.24.3",
