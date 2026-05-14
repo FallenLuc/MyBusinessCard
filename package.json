@@ -22,14 +22,14 @@
 	"pnpm": {
 		"onlyBuiltDependencies": [
 			"@parcel/watcher",
+			"@svgr/webpack",
 			"@swc/core",
+			"chromatic",
+			"core-js",
 			"core-js-pure",
 			"esbuild",
 			"husky",
-			"chromatic",
-			"sass",
-			"@svgr/webpack",
-			"core-js"
+			"sass"
 		]
 	},
 	"devDependencies": {
