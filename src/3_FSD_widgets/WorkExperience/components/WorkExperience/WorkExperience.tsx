@@ -22,12 +22,17 @@ export const WorkExperience = TypedMemo((props: WorkExperienceProps) => {
 			id={menuItems.work.key}
 		>
 			<Title level={2}>Профессиональный опыт</Title>
-			{workInformation.map((itemWr, i) => (
-				<WorkDetailedCard
-					key={i}
-					card={itemWr}
-				/>
-			))}
+			<Flex
+				vertical
+				gap={"large"}
+			>
+				{workInformation.map((itemWr, i) => (
+					<WorkDetailedCard
+						key={i}
+						card={itemWr}
+					/>
+				))}
+			</Flex>
 		</Flex>
 	)
 })
