@@ -36,7 +36,7 @@ export const WorkDetailedCard = TypedMemo((props: WorkDetailedCardProps) => {
 				/>
 
 				<Flex vertical>
-					<Title level={4}>{position}</Title>
+					<Title level={4}>{`${nameCompany}, ${position}`}</Title>
 					<Text italic>{date}</Text>
 				</Flex>
 			</Flex>

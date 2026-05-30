@@ -31,9 +31,10 @@ export const Header = TypedMemo((props: HeaderProps) => {
 					level={1}
 					className={styles.title}
 				>
-					Никита Кувашов
+					Middle Frontend разработчик
 				</Title>
-				<Text italic>Frontend Developer</Text>
+				<Text type={"secondary"}>Никита Кувашов</Text>
+				<Text italic>React · TypeScript · Redux Toolkit · FSD</Text>
 			</Flex>
 			<Menu />
 		</Flex>

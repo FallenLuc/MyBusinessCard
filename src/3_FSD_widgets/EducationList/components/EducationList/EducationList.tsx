@@ -41,6 +41,16 @@ export const EducationList = TypedMemo((props: EducationListProps) => {
 			<Title level={2}>Образование</Title>
 
 			<Flex vertical>
+				<Title level={3}>Курсы, тренинги:</Title>
+
+				<List
+					bordered
+					dataSource={educationListConstant}
+					renderItem={renderFunction}
+				/>
+			</Flex>
+
+			<Flex vertical>
 				<Title level={3}>Основное образование:</Title>
 
 				<List bordered>
@@ -57,16 +67,6 @@ export const EducationList = TypedMemo((props: EducationListProps) => {
 			</Flex>
 
 			<Flex vertical>
-				<Title level={3}>Курсы, тренинги:</Title>
-
-				<List
-					bordered
-					dataSource={educationListConstant}
-					renderItem={renderFunction}
-				/>
-			</Flex>
-
-			<Flex vertical>
 				<Title level={3}>Дополнительная информация:</Title>
 
 				<List bordered>
@@ -74,7 +74,9 @@ export const EducationList = TypedMemo((props: EducationListProps) => {
 						<List.Item.Meta
 							avatar={<ReadOutlined className={styles.icon} />}
 							title={"Иностранный язык"}
-							description={"Английский язык (B1 — Intermediate)"}
+							description={
+								"Английский язык (B1 — Intermediate), использую и читаю документацию на английском."
+							}
 						/>
 					</List.Item>
 				</List>

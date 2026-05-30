@@ -53,7 +53,7 @@ export const Contacts = TypedMemo((props: ContactsProps) => {
 					rel="noreferrer"
 				>
 					<GithubOutlined className={styles.icon} />
-					<Text className={styles.text}>Портфолио</Text>
+					<Text className={styles.text}>GitHub</Text>
 				</a>
 			</Flex>
 		</Flex>
